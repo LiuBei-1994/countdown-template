@@ -1,0 +1,309 @@
+
+/* ---------------
+ * Global Styles 
+ * --------------- */
+html,
+body,
+#wrapper {
+  height: 100%;
+}
+
+body {
+  font-size: 15px;
+  color: #505050;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #4A90E2;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #76abe9;
+  text-decoration: none;
+}
+
+#wrapper {
+  padding: 0 100px;
+  background-image: url('../img/fullscreen-bg.jpg?1473332506');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 992px) {
+  #wrapper {
+    padding: 0 30px;
+  }
+}
+
+header {
+  position: absolute;
+  top: 30px;
+}
+
+.right-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 460px;
+  height: 100%;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+@media screen and (max-width: 1200px) {
+  .right-section {
+    position: relative;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.table-wrap {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.main-heading {
+  font-size: 75px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .main-heading {
+    font-size: 38px;
+  }
+}
+
+.section-heading {
+  font-weight: 700;
+  font-family: inherit;
+  margin-top: 0;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+footer p {
+  font-size: 13px;
+}
+@media screen and (max-width: 1200px) {
+  footer {
+    position: relative;
+    margin-top: 30px;
+  }
+}
+
+/* jQuery Countdown styles 2.0.0. */
+.is-countdown {
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+.countdown-rtl {
+  direction: rtl;
+}
+
+.countdown-holding span {
+  color: #888;
+}
+
+.countdown-row {
+  clear: both;
+  width: 100%;
+  padding: 0px 2px;
+  text-align: center;
+}
+
+.countdown-show1 .countdown-section {
+  width: 98%;
+}
+
+.countdown-show2 .countdown-section {
+  width: 48%;
+}
+
+.countdown-show3 .countdown-section {
+  width: 32.5%;
+}
+
+.countdown-show4 .countdown-section {
+  width: 24.5%;
+}
+
+.countdown-show5 .countdown-section {
+  width: 19.5%;
+}
+
+.countdown-show6 .countdown-section {
+  width: 16.25%;
+}
+
+.countdown-show7 .countdown-section {
+  width: 14%;
+}
+
+.countdown-section {
+  display: block;
+  float: left;
+  font-size: 75%;
+  text-align: center;
+}
+
+.countdown-amount {
+  font-size: 200%;
+}
+
+.countdown-period {
+  display: block;
+}
+
+.countdown-descr {
+  display: block;
+  width: 100%;
+}
+
+/* -------------------
+ * WEB ELEMENTS
+ * -------------------*/
+/* buttons */
+.btn {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  font-weight: 700;
+}
+
+.btn-lg {
+  padding: 15px 26px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #4A90E2;
+  border-color: #277adc;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus {
+  background-color: #3d88e0;
+  border-color: #277adc;
+}
+
+/* form inputs */
+.form-control {
+  -moz-border-radius: 0 !important;
+  -webkit-border-radius: 0;
+  border-radius: 0 !important;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* countdown */
+.countdown {
+  background-color: transparent;
+  border: none;
+}
+.countdown .countdown-amount {
+  font-size: 56px;
+  line-height: 1;
+}
+.countdown .countdown-period {
+  font-size: 22px;
+  color: #838383;
+  text-transform: lowercase;
+}
+@media screen and (max-width: 768px) {
+  .countdown .countdown-amount {
+    font-size: 22px;
+  }
+  .countdown .countdown-period {
+    font-size: 18px;
+  }
+}
+
+.countdown-show4 .countdown-section {
+  width: auto;
+  margin-right: 110px;
+}
+@media screen and (max-width: 1200px) {
+  .countdown-show4 .countdown-section {
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .countdown-show4 .countdown-section {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .countdown-show4 .countdown-section {
+    margin-right: 22px;
+  }
+}
+
+.countdown-holding span {
+  color: #505050;
+}
+
+/* social icons */
+.social-icons {
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 30px;
+}
+.social-icons > li {
+  padding: 0 2px 5px 2px;
+}
+.social-icons > li > a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  text-align: center;
+  background-color: #505050;
+  color: #fff;
+}
+.social-icons > li > a i {
+  font-size: 18px;
+}
+.social-icons > li > a:hover, .social-icons > li > a:focus {
+  background-color: #3c3c3c;
+}
+
+.social-icons-circle > li > a {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
